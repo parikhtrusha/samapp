@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samapp</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render :partial=>'common/header' %>
+<%= yield %>
+<div class="modal-footer" style="margin-bottom:20px;">
+<%= render :partial=>'common/footer' %>
+</div>
+</body>
+</html>
