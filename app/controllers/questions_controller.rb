@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
 def index
 		@question=Question.all
-		#@user = User.find(:all)
+		@user = User.find(:all)
 		respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @question }
